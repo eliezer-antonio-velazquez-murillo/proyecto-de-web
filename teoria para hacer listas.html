@@ -1,0 +1,343 @@
+<html><head>
+    <title>Listas HTML</title>
+<body bgcolor = "CCEEFF">
+
+    
+
+
+          <h1>Listas HTML</h1>
+          
+          <div id="markdown-content-container"><p>Las listas en HTML nos permite crear conjuntos de elementos en forma de lista dentro de una página, todos los cuales irán precedidos, generalmente, por un guión o número.</p>
+
+<p>Los tipos de listas en HTML son los siguientes:</p>
+
+<ul>
+  <li>Listas ordenadas</li>
+  <li>Listas desordenadas</li>
+  <li>Listas de definiciones</li>
+</ul>
+
+<h2 id="listas-ordenadas">Listas Ordenadas</h2>
+
+<p>Las listas en HTML ordenadas son aquellas que nos muestran los elementos de la lista en orden. Para representar el orden tendremos los elementos numerados. Es decir, cada uno de los elementos irá precedido de un número o letra que establezca su orden.</p>
+
+<p>Las listas en HTML ordenadas se representan mediante el elemento OL.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol&gt;</span> ... <span class="nt">&lt;/ol&gt;</span>
+</code></pre></div></div>
+
+<p>Cada uno de los elementos de la lista ordenada se representará mediante el elemento LI.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Elemento 1<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Elemento 2<span class="nt">&lt;/li&gt;</span>
+  ...
+  <span class="nt">&lt;li&gt;</span>Elemento N<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</code></pre></div></div>
+
+<p>Un ejemplo de lista ordenada sería el siguiente:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Julio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Carmen<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Ignacio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Elena<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</code></pre></div></div>
+
+<p>Que produciría el siguiente efecto:</p>
+
+<ol>
+  <li>Julio</li>
+  <li>Carmen</li>
+  <li>Ignacio</li>
+  <li>Elena</li>
+</ol>
+
+<h3 id="número-de-inicio-de-la-lista-start">Número de inicio de la lista: start</h3>
+
+<p>El atributo start nos permite indicar el número por el cual queremos que empiece la lista, ya que por defecto las listas ordenadas en HTML empiezan por el número 1.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol</span> <span class="na">start=</span><span class="s">"numero"</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/ol&gt;</span>
+</code></pre></div></div>
+
+<p>De esta forma, si queremos que la lista empiece por el número 5, escribiremos el siguiente código:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol</span> <span class="na">start=</span><span class="s">"5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Julio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Carmen<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Ignacio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Elena<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</code></pre></div></div>
+
+<p>Que produciría el siguiente efecto:</p>
+
+<ol start="5">
+  <li>Julio</li>
+  <li>Carmen</li>
+  <li>Ignacio</li>
+  <li>Elena</li>
+</ol>
+
+<h3 id="tipo-de-lista-ordenada-type">Tipo de lista ordenada: type</h3>
+
+<p>De igual manera podemos indicar el tipo de lista ordenada en HTML que queremos representar.</p>
+
+<p>Entre los tipos de listas que podemos representar tenemos:</p>
+
+<ul>
+  <li>1 - Listas decimales</li>
+  <li>a - Listas alfabéticas en minúsculas</li>
+  <li>A - Listas alfabéticas en mayúsculas</li>
+  <li>i - Listas de números romanos en minúsculas</li>
+  <li>I - Listas de números romanos en mayúsculas</li>
+</ul>
+
+<p>Los valores indicados al principio son los que le podemos asignar al atributo type de la lista ordenada en HTML.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol</span> <span class="na">type=</span><span class="s">"tipo"</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/ol&gt;</span>
+</code></pre></div></div>
+
+<p>Si queremos que nuestra lista aparezca ordenada mediante letras en mayúsculas escribimos lo siguiente:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol</span> <span class="na">type=</span><span class="s">”A”</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Julio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Carmen<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Ignacio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Elena<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</code></pre></div></div>
+
+<p>En este caso la lista se representará de la siguiente forma:</p>
+
+<p>&lt;ol type=”A”&gt;</p>
+<li>Julio</li>
+<li>Carmen</li>
+<li>Ignacio</li>
+<li>Elena</li>
+<p>&lt;/ol&gt;</p>
+
+<h3 id="atributos-starttype-en-html-401">Atributos start/type en HTML 4.01</h3>
+
+<p>Aunque en HTML 5 han vuelto a la especificación los atributos type y start hay que tener cuidado con ellos, ya que en ciertas versiones como HTML 4.01 fueron declarados obsoletos, por lo cual si usamos tipos de documentos HTML 4.01 strict podríamos tener un problema en su definición.</p>
+
+<p>Para estos casos (y para todos en general) podemos utilizar las hojas de estilo CSS de cara a dar estilo a las listas en HTML.</p>
+
+<p>De esta forma en CSS podemos escribir lo siguiente:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style </span><span class="na">type=</span><span class="s">”text/css”</span><span class="nt">&gt;</span>
+<span class="nt">ol</span> <span class="p">{</span>
+  <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">lower-roman</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+</code></pre></div></div>
+
+<p>Lo cual hará que las listas en HTML ordenadas se muestren en números romanos y en minúsculas.</p>
+
+<h3 id="listas-en-orden-inverso-reversed">Listas en orden inverso: reversed</h3>
+
+<p>En HTML 5 aparece el atributo reversed para las listas ordenadas. El atributo reversed nos permite invertir el orden de la lista. Es decir, realiza la numeración de la lista de forma inversa.</p>
+
+<p>Para utilizarlo simplemente indicamos el atributo reversed sobre el elemento OL.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol</span> <span class="na">reversed</span><span class="nt">&gt;</span> ... <span class="nt">&lt;/ol&gt;</span>
+</code></pre></div></div>
+
+<p>En este caso, si escribimos la siguiente lista:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol</span> <span class="na">reversed</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Julio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Carmen<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Ignacio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Elena<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</code></pre></div></div>
+
+<p>Lo que obtendremos por pantalla será lo siguiente:</p>
+
+<ol reversed="">
+  <li>Julio</li>
+  <li>Carmen</li>
+  <li>Ignacio</li>
+  <li>Elena</li>
+</ol>
+
+<h2 id="listas-desordenadas">Listas Desordenadas</h2>
+
+<p>Las listas desordenadas en HTML nos sirven para mostrar los elementos sin ningún tipo de orden, simplemente precedidos por una viñeta que puede ser un punto, un cuadrado,…</p>
+
+<p>Para definir una lista desordenada en HTML utilizamos el elemento ul.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span> ... <span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>Para representar los elementos de la lista desordenada utilizamos el mismo elemento que con las listas ordenadas, es decir, el elemento li.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Elemento 1<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Elemento 2<span class="nt">&lt;/li&gt;</span>
+  ...
+  <span class="nt">&lt;li&gt;</span>Elemento N<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>De esa forma podríamos tener el siguiente código HTML:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>FC. Barcelona<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Real Madrid<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Real Betis<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Atlético de Madrid<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>Lo que nos mostrará por pantalla:</p>
+
+<ul>
+  <li>FC. Barcelona</li>
+  <li>Real Madrid</li>
+  <li>Real Betis</li>
+  <li>Atlético de Madrid</li>
+</ul>
+
+<h3 id="tipos-de-lista-desordenada">Tipos de lista desordenada</h3>
+
+<p>En el caso de las listas en HTML desordenadas en HTML no podemos indicarle el tipo de lista mediante HTML. En este caso tenemos que recurrir a CSS para poder indicar el tipo de lista utilizando el atributo list-style-type</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style </span><span class="na">type=</span><span class="s">”text/css”</span><span class="nt">&gt;</span>
+<span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">circle</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+</code></pre></div></div>
+
+<h2 id="listas-de-definiciones">Listas de Definiciones</h2>
+
+<p>Las listas en HTML de definiciones en HTML nos sirven para montar listas en las que tenemos la estructura valor y definición. Suelen ser listas para definir términos, como si fuese un diccionario, si bien pueden ser cualquier par valor-definición.</p>
+
+<p>Las listas en HTML de definiciones en HTML se construyen mediante el elemento dl.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dl&gt;</span> ... <span class="nt">&lt;/dl&gt;</span>
+</code></pre></div></div>
+
+<p>En este caso, dentro de las listas en HTML de definiciones tenemos dos elementos anidados, el que representa al valor dt y el que representa a la definición dd. De esta forma la estructura de las listas en HTML de definiciones es la siguiente:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dl&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Término1<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>Definición 1<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Término 2<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>Definición 2<span class="nt">&lt;/dd&gt;</span>
+  ...
+  <span class="nt">&lt;dt&gt;</span>Término N<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>Definición N<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span>
+</code></pre></div></div>
+
+<p>Si queremos crear una lista en HTML con definiciones de palabras, podemos escribir lo siguiente:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dl&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Pizpireta<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>Dicho de una mujer: Viva, pronta y aguda.<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Pulular<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>Dicho de las personas, animales o cosas: Abundar y bullir en un lugar.<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>Concupiscencia<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>En la moral católica, deseo de bienes terrenos y, en especial, apetito desordenado de placeres deshonestos.<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span>
+</code></pre></div></div>
+
+<p>Lo cual nos acabará mostrando por pantalla lo siguiente:</p>
+
+<dl>
+  <dt>Pizpireta</dt>
+  <dd>Dicho de una mujer: Viva, pronta y aguda.</dd>
+  <dt>Pulular</dt>
+  <dd>Dicho de las personas, animales o cosas: Abundar y bullir en un lugar.</dd>
+  <dt>Concupiscencia</dt>
+  <dd>En la moral católica, deseo de bienes terrenos y, en especial, apetito desordenado de placeres deshonestos.</dd>
+</dl>
+
+<p>Por defecto los navegadores dejan el término y en la siguiente líne, junto con un tabulador, la definición.</p>
+
+<h2 id="listas-anidadas">Listas anidadas</h2>
+
+<p>Cuando estemos manejando listas podemos anidar unas en otras independientemente del tipo de lista que estemos anidando.</p>
+
+<p>Para crear listas anidadas en HTML simplemente tenemos que hacer que el elemento de una de las listas sea a su vez una lista. Es decir, el esquema de listas sería parecido al siguiente:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Elemento 1<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Elemento 2<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;ol&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Elemento 2.1<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Elemento 2.2<span class="nt">&lt;/li&gt;</span>
+      ...
+      <span class="nt">&lt;li&gt;</span>Elemento 2.N<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Elemento 3<span class="nt">&lt;/li&gt;</span>
+  ...
+  <span class="nt">&lt;li&gt;</span>Elemento N<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>En este caso hemos anidado una lista ordenada dentro del tercer elemento li de una lista desordenada.</p>
+
+<p>Hay que tener cuidado de poner el elemento li dentro de la lista anidada, ya que si no lo ponemos estaremos generando un código incorrecto.</p>
+
+<p>Las anidaciones de listas puede ser de cualquier tipo de lista y sin límite de anidación.</p>
+
+<p>Un ejemplo de listas anidadas sería una clasificación de animales como la siguiente:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Carnívoro
+  	<span class="nt">&lt;ul&gt;</span>
+  		<span class="nt">&lt;li&gt;</span>León<span class="nt">&lt;/li&gt;</span>
+  		<span class="nt">&lt;li&gt;</span>Buitre<span class="nt">&lt;/li&gt;</span>
+  		<span class="nt">&lt;li&gt;</span>Hiena<span class="nt">&lt;/li&gt;</span>
+  	<span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Herbívoro
+  	<span class="nt">&lt;ul&gt;</span>
+  		<span class="nt">&lt;li&gt;</span>Cabra<span class="nt">&lt;/li&gt;</span>
+  		<span class="nt">&lt;li&gt;</span>Vaca<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>Omnívoro
+<span class="nt">&lt;ul&gt;</span>
+<span class="nt">&lt;li&gt;</span>Oso<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>Urraca<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+<p>El efecto que obtendríamos sería el siguiente:</p>
+<ul>
+<li>Carnívoro
+<ul>
+<li>León</li>
+<li>Buitre</li>
+<li>Hiena</li>
+</ul>
+</li>
+<li>Herbívoro
+<ul>
+<li>Cabra</li>
+<li>Vaca</li>
+</ul>
+</li>
+<li>Omnívoro
+<ul>
+<li>Oso</li>
+<li>Urraca</li>
+</ul>
+</li>
+</ul>
+</div>
+<p class="text-center">
+<br>
+<br>
+<center><font size = "6">Eliezer Antonio Velazquez Murillo</font></center>        
+</html>

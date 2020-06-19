@@ -1,0 +1,188 @@
+<html>
+<head>
+<title>teoria video</title>
+<body bgcolor= "CCEEFF">
+
+<center><font color="000000"><font size="14">Etiqueta HTML para video (modo básico)</font></font></center>
+<br>
+
+<center><font size="5">La etiqueta <font color="000000">video</font> tiene varios atributos a nuestra disposición:</font></center>
+<br>
+
+<center><table bordercolor="000000", border="5">
+
+<tr bgcolor="CCEEFF">
+  <th colspan="2">Atributo </td>
+  <th colspan="2">Valor</td>
+  <th colspan="2">Descripcion</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2">src</td>
+  <td colspan="2">Direccion URL	</td>
+  <td colspan="2">Video a reproducir. Obligatoria si actua como etiqueta contenedora..</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2">Poster</td>
+  <td colspan="2">Direccion URL</td>
+  <td colspan="2">Muestra una imagen a modo de presentación.</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2">preload </td>
+  <td colspan="2">Auto/ Medata/ none</td>
+  <td colspan="2">Indica como realizar la precarga del video.</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2" >mediagroup</td>
+  <td colspan="2"> nombre</td>
+  <td colspan="2" >	Establece un nombre para un grupo de contenidos multimedia.</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2" >Aotoplay</td>
+  <td colspan="2"> -</td>
+  <td colspan="2" >		Comienza a reproducir el video automáticamente..</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2" >loop</td>
+  <td colspan="2"> -</td>
+  <td colspan="2" >	Vuelve a iniciar el video cuando finaliza su reproducción (bucle)..</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2" >muted</td>
+  <td colspan="2"> -</td>
+  <td colspan="2" >		Establece el video sin sonido (silenciado)..</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2" >Controls</td>
+  <td colspan="2"> -</td>
+  <td colspan="2" >	Muestra los controles de reproducción. Por defecto no se muestran.</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2" >Width</td>
+  <td colspan="2"> Tamaño</td>
+  <td colspan="2" >		Indica el tamaño de ancho del video.</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2" >Height</td>
+  <td colspan="2"> Tamaño</td>
+  <td colspan="2" >		Indica el tamaño de alto del video.</td>
+</tr>
+</table></center>
+
+<br>
+<br>
+
+<center><font color="000000"><font size="14">Formatos de video soportados</font></font></center>
+
+
+<br>
+<center><font size="5">Antes de continuar con el modo avanzado de etiquetas de video, debemos conocer una serie de conceptos básicos y los diferentes formatos de video que existen actualmente. En primer lugar, debemos saber que un archivo de video tiene dos partes principales: el formato contenedor, que es el formato del video en sí, mientras que en su interior puede tener múltiples componentes codificados con diferentes codecs.</font></center>
+<br>  
+<br>
+<center><font size="5">De hecho, un video básico suele tener, como mínimo, un componente de video y otro de audio, pero puede tener muchos más (subtítulos, imágenes, etc...). Estos detalles son muy importantes, ya que dependiendo del formato y/o codec de un video, puede que sea factible utilizarlo para web o no, así que hay que conocer un poco sobre estos conceptos.<br>
+<br>
+A continuación tenemos un listado de los formatos/codecs más conocidos y utilizados:</font></center>
+<br>
+<center><table bordercolor="000000", border="5">
+
+<tr bgcolor="CCEEFF">
+  <th colspan="2">Formato </td>
+  <th colspan="2">Codec utilizado</td>
+  <th colspan="2">Caracteristicas</td>
+  <th colspan="2">¿Recomendado?</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2">MP4		</td>
+  <td colspan="2">x264, DivX H264	</td>
+  <td colspan="2">Alta calidad. Codec x264 libre.</td>
+<td colspan="2">Sí, buen soporte	</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2">WebM		</td>
+  <td colspan="2">VP8, VP9</td>
+  <td colspan="2">Alternativa libre a MP4 de Google.</td>
+<td colspan="2">Sí, buen soporte	</td>
+</tr>
+
+
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2" >Ogv		</td>
+  <td colspan="2"> Theora</td>
+  <td colspan="2" >	Alternativa libre a MP4.</td>
+<td colspan="2">Sí, buen soporte	</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2" >MKV		</td>
+  <td colspan="2"> Matroska</td>
+  <td colspan="2" >		Buena compresión. Potente.</td>
+<td colspan="2">No, alto consumo CPU	</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2" >AVI		</td>
+  <td colspan="2"> XviD, DivX 3/5</td>
+  <td colspan="2" >	Menor compresión que MP4.</td>
+<td colspan="2">No	</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2" >HEVC		</td>
+  <td colspan="2"> x265, DivX HEVC</td>
+  <td colspan="2" >		Futura evolución de MP4</td>
+<td colspan="2">No, en desarrollo aún.	</td>
+</tr>
+
+
+</table></center>
+
+<br>
+<center><font size="5">Otros formatos como MOV, FLV, 3GP, MPG, RMVB o ASF (WMV) no se recomiendan para su utilización en web ya que son anticuados, propietarios o poco eficientes. Si te interesa saber más sobre estos temas, aconsejo la lectura del artículo</font></center>
+<br>
+
+<center><font size="14"><font color="000000">Etiquetas HTML para video (modo avanzado)</font></font></center>
+
+<br>
+
+<center><font size="5">Sin embargo, aún con toda esta información, no hemos visto ni la mitad de posibilidades multimedia que tenemos con HTML5. La etiqueta <font color="000000">video</font> también puede actuar como etiqueta contenedora e incluir varias etiquetas HTML para dotar de mayor compatibilidad, o capacidades adicionales.</font></center>
+
+<br>
+<center><table bordercolor="000000", border="5">
+
+<tr bgcolor="CCEEFF">
+  <th colspan="2">Etiqueta </td>
+  <th colspan="2">Atributo</td>
+  <th colspan="2">Descripcion</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2"><font color="000000">source</font>		</td>
+  <td colspan="2">src, type	</td>
+  <td colspan="2">Establece un archivo de video o lo añade como alternativa</td>
+</tr>
+
+<tr bgcolor="CCEEFF">
+  <td colspan="2"><font color="000000">track </font></td>
+  <td colspan="2">src, srclang, label, kind, default</td>
+  <td colspan="2">Establece un archivo de subtítulos o lo añade como alternativa.</td>
+</tr>
+
+
+
+</table></center>
+
+</body>
+</head>
+</html>
